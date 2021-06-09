@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <SlidingDrawer
+        android:id="@+id/simpleSlidingDrawer1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:content="@+id/content1"
+        android:handle="@+id/handle1"
+        android:orientation="horizontal"
+        android:rotation="180">
+
+        <!-- Let us define the button -->
+        <Button
+            android:id="@id/handle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0f0"
+            android:rotation="270"
+            android:text="Open"
+            android:textColor="#fff" />
+
+        <!-- layout for the content of the SlidingDrawer -->
+        <LinearLayout
+            android:id="@id/content1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:rotation="180">
+
+            <!-- DEFINE ALL YOUR CONTENT,WIDGETS HERE
+                WHICH YOU WANT TO ADD IN SLIDING DRAWER LAYOUT. -->
+            <ListView
+                android:id="@+id/simpleListView1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+        </LinearLayout>
+    </SlidingDrawer>
+</LinearLayout>

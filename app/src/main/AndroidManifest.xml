@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sree.myappfeb">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="com.javapapers.android.androidlocationmaps.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/iconfeb"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyAppFeb">
+        <activity android:name=".basic.SearchViewEx"></activity>
+        <activity android:name=".basic.CustomListView" />
+        <activity android:name=".basic.ListViewActivity" />
+        <activity android:name=".basic.CheckActivity" />
+        <activity android:name=".integration.FacebookIntegration" />
+        <activity android:name=".designPatterns.mvvmexample.MVVMPattern" />
+        <activity android:name=".designPatterns.MVP.MVPPattern" />
+        <activity android:name=".designPatterns.MVC.MVCPatterns" />
+        <activity android:name=".webserviceVolley.JsonArrayParsingVolley" />
+        <activity android:name=".webserviceRetrofit.RetrofitMain" />
+        <activity android:name=".storage.SqlitewithOpenHelper" />
+        <activity android:name=".storage.InternalStorageActivity" />
+        <activity android:name=".storage.SqliteViewActivity" />
+        <activity android:name=".storage.ViewCourses" />
+        <activity android:name=".storage.SqliteWithoutOpenHelper" />
+        <activity android:name=".parseandprefference.SecondPageShared" />
+        <activity android:name=".parseandprefference.LoginUsingShared" />
+        <activity android:name=".parseandprefference.XmlPullActivity" />
+        <activity android:name=".parseandprefference.JsonFrom2" />
+        <activity android:name=".parseandprefference.SimpleJson" />
+        <activity android:name=".asynccc.AsyncActivity" />
+        <activity android:name=".storage.ExStorageActivity" />
+        <activity android:name=".connectivitiesss.WiFiActivity" />
+        <activity android:name=".notificationsss.NotificationActivity" />
+        <activity android:name=".notificationsss.SimpleNotifi" />
+        <activity android:name=".connectivitiesss.NetworkConnectivityActivity" />
+        <activity android:name=".connectivitiesss.SMSActivity" />
+        <activity android:name=".connectivitiesss.BluethoothActivity" />
+        <activity android:name=".connectivitiesss.PhoneCallEx" />
+        <activity
+            android:name=".HomePage"
+            android:theme="@style/mytheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+      The API key for Google Maps-based APIs is defined as a string resource.
+      (See the file "res/values/google_maps_api.xml").
+      Note that the API key is linked to the encryption key used to sign the APK.
+      You need a different API key for each encryption key, including the release key that is used to
+      sign the APK for publishing.
+      You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".basic.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".basic.PopUpmenuEx" />
+        <activity android:name=".basic.SubMenuEx" />
+        <activity android:name=".basic.ContextMenuEx" />
+        <activity android:name=".basic.OptionMenuEx" />
+        <activity android:name=".basic.VideoActivity" />
+        <activity android:name=".basic.MediaActivity" />
+        <activity android:name=".basic.GalleryActivity" />
+        <activity android:name=".basic.CameraActivity" />
+        <activity android:name=".basic.NumberPickerActivity" />
+        <activity android:name=".basic.CalendarActivity" />
+        <activity android:name=".basic.DatePickerActivity" />
+        <activity android:name=".basic.TimePickerWithEditText" />
+        <activity android:name=".basic.TimePickerActivity" />
+        <activity android:name=".basic.ProgressDialogActivity" />
+        <activity android:name=".basic.AlertCustom" />
+        <activity android:name=".basic.AlertDialogActivity" />
+        <activity android:name=".basic.SlidingActivity" />
+        <activity android:name=".basic.MyActivity" />
+        <activity
+            android:name=".basic.TabbbActivity"
+            android:theme="@style/mytheme" />
+        <activity android:name=".basic.WebViewActivity" />
+        <activity android:name=".basic.ListViewWithCheckBoxActivity" />
+        <activity android:name=".basic.HorizontalScroll" />
+        <activity android:name=".basic.VerticalScrol" />
+        <activity android:name=".basic.ExpandableLVActivity" />
+        <activity android:name=".basic.CustomGridViewww" />
+        <activity android:name=".basic.GridViewActivity" />
+        <activity android:name=".basic.CustomToastActivity" />
+        <activity android:name=".basic.AutoCompleteTvActivity" />
+        <activity android:name=".basic.RatingActivity" />
+        <activity android:name=".basic.ProgressBarActivity" />
+        <activity android:name=".basic.SeekBarActivity" />
+        <activity android:name=".basic.SpinnerActivity" />
+        <activity android:name=".basic.SecondPage" />
+        <activity android:name=".basic.ThirdActivity" />
+        <activity android:name=".notificationsss.ServiceActivity" />
+
+        <service android:name=".notificationsss.NewService" />
+
+        <activity android:name=".notificationsss.BroadActivity" />
+        <activity android:name=".materialcard.SecondActivityCard" />
+        <activity android:name=".materialcard.CardWithRecycler" />
+        <activity
+            android:name=".fragment.FragmentExample"
+            android:theme="@style/mytheme" />
+        <activity android:name=".material.MainActivityRecycler" />
+        <activity android:name=".material.SecondActivityRecycler" />
+        <activity android:name=".materialcard.MainActivitycard" />
+        <activity
+            android:name=".navigation.NavActivity"
+            android:theme="@style/Navigation" />
+        <activity android:name=".navigation.SettingActivity" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

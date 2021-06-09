@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Home"
+            android:icon="@drawable/ic_home"
+            android:title="HOME" />
+        <item
+            android:id="@+id/nav_Inbox"
+            android:icon="@drawable/ic_message"
+            android:title="INBOX" />
+        <item
+            android:id="@+id/nav_Setting"
+            android:icon="@drawable/ic_settings"
+            android:title="SETTINGS" />
+        <item
+            android:id="@+id/nav_Tools"
+            android:icon="@drawable/ic_content_cut"
+            android:title="TOOLS" />
+    </group>
+
+    <item android:title="SECTION2">
+    <menu>
+        <item
+            android:id="@+id/nav_Profile"
+            android:title="PROFILE"
+            android:icon="@drawable/ic_account_box"/>
+    </menu>
+</item>
+
+    <item android:title="SECTION3">
+        <menu>
+            <item
+                android:id="@+id/nav_Social"
+                android:title="SOCIAL"
+                android:icon="@drawable/ic_social"/>
+        </menu>
+    </item>
+
+
+
+</menu>

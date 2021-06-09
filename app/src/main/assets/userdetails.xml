@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <users>
+        <user>
+            <name>Aswathy</name>
+            <designation>Team Leader</designation>
+            <location>Kochi</location>
+        </user>
+
+        <user>
+            <name>Alan</name>
+            <designation>Android Developer</designation>
+            <location>Kochi</location>
+        </user>
+
+        <user>
+            <name>Eldho</name>
+            <designation>IOS Developer</designation>
+            <location>TVM</location>
+        </user>
+
+        <user>
+            <name>Akshay</name>
+            <designation>Android Developer</designation>
+            <location>TVM</location>
+        </user>
+    </users>
+</resources>
