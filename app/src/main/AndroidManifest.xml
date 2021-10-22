@@ -31,7 +31,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyAppFeb">
-        <activity android:name=".basic.SearchViewEx"></activity>
+        <activity android:name=".storage.ExDetailsActivity"></activity>
+        <activity android:name=".basic.NormalSpinner" />
+        <activity android:name=".basic.SearchViewEx" />
         <activity android:name=".basic.CustomListView" />
         <activity android:name=".basic.ListViewActivity" />
         <activity android:name=".basic.CheckActivity" />
@@ -102,6 +104,7 @@
         <activity android:name=".basic.AlertDialogActivity" />
         <activity android:name=".basic.SlidingActivity" />
         <activity android:name=".basic.MyActivity" />
+        <activity android:name=".basic.RadioButtonActivity" />
         <activity
             android:name=".basic.TabbbActivity"
             android:theme="@style/mytheme" />

@@ -9,7 +9,6 @@ import android.widget.Toast;
 
 import com.sree.myappfeb.R;
 
-
 public class GridViewActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {

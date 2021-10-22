@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
 import com.sree.myappfeb.R;
 
 public class SqlitewithOpenHelper extends AppCompatActivity {

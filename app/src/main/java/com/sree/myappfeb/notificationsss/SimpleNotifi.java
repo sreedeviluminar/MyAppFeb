@@ -43,9 +43,7 @@ public class SimpleNotifi extends AppCompatActivity {
             NotificationManager notificationManager = getSystemService(NotificationManager.class);
             notificationManager.createNotificationChannel(notificationChannel);
         }
-
     }
-
     public void createNotification(){
 
         Intent intent = new Intent(this, NotificationActivity.class);

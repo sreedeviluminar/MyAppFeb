@@ -18,16 +18,17 @@ public class CustomToastActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_custom_toast);
+
         Button btn = (Button)findViewById(R.id.btnShow);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 LayoutInflater inflater = getLayoutInflater();
-                View layout = inflater.inflate(R.layout.custom_toast, (ViewGroup) findViewById(R.id.custom_toast_layout));
+                View layout = inflater.inflate(R.layout.custom_toast,(ViewGroup)findViewById(R.id.custom_toast_layout));
                 TextView tv = (TextView) layout.findViewById(R.id.txtvw);
-                tv.setText("Custom Toast Notification");
+                tv.setText("EmaiL Notification......");
                 Toast toast = new Toast(getApplicationContext());
-                toast.setGravity(Gravity.CENTER_VERTICAL, 0, 100);
+                toast.setGravity(Gravity.BOTTOM, 0, 100);
                 toast.setDuration(Toast.LENGTH_LONG);
                 toast.setView(layout);
                 toast.show();

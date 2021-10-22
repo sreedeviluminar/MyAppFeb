@@ -37,6 +37,7 @@
                 android:id="@+id/nav_Social"
                 android:title="SOCIAL"
                 android:icon="@drawable/ic_social"/>
+
         </menu>
     </item>
 

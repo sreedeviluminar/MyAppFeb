@@ -30,7 +30,8 @@ public class CourseRVAdapter extends RecyclerView.Adapter<CourseRVAdapter.ViewHo
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         // on below line we are inflating our layout
         // file for our recycler view items.
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.course_rv_item, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).
+                inflate(R.layout.course_rv_item, parent, false);
         return new ViewHolder(view);
     }
 
@@ -39,6 +40,7 @@ public class CourseRVAdapter extends RecyclerView.Adapter<CourseRVAdapter.ViewHo
         // on below line we are setting data
         // to our views of recycler view item.
         CourseModal modal = courseModalArrayList.get(position);
+
         holder.courseNameTV.setText(modal.getCourseName());
         holder.courseDescTV.setText(modal.getCourseDescription());
         holder.courseDurationTV.setText(modal.getCourseDuration());

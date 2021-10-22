@@ -17,6 +17,7 @@ public class ExpandableLVActivity extends AppCompatActivity {
 
         ExpandableListView expandableListViewExample;
         ExpandableListAdapter expandableListAdapter;
+
         List<String> expandableTitleList;
         HashMap<String, List<String>> expandableDetailList;
 

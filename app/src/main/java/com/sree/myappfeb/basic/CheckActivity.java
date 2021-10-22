@@ -12,19 +12,24 @@ import com.sree.myappfeb.R;
 
 public class CheckActivity extends AppCompatActivity {
     CheckBox android, java, angular, python;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_check_box2);
+
         android = (CheckBox)findViewById(R.id.chkAndroid);
         angular = (CheckBox)findViewById(R.id.chkAngular);
         java = (CheckBox)findViewById(R.id.chkJava);
         python = (CheckBox)findViewById(R.id.chkPython);
+
         Button btn = (Button)findViewById(R.id.getBtn);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 String result = "Selected Courses";
+
                 if(android.isChecked()){
                     result += "\nAndroid";
                 }
@@ -41,6 +46,7 @@ public class CheckActivity extends AppCompatActivity {
             }
         });
     }
+
     public void onCheckboxClicked(View view) {
         boolean checked = ((CheckBox) view).isChecked();
         String str="";

@@ -37,9 +37,8 @@ public class NavActivity extends AppCompatActivity implements NavigationView.OnN
         });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open,
-                                    R.string.navigation_drawer_close);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer,
+                toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
@@ -54,6 +53,7 @@ public class NavActivity extends AppCompatActivity implements NavigationView.OnN
         navigationView.setCheckedItem(R.id.nav_Home);
     }
         public void setActionBarTitle(String title){
+
         getSupportActionBar().setTitle(title);
     }
     @Override

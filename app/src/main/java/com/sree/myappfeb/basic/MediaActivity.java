@@ -37,6 +37,7 @@ public class MediaActivity extends AppCompatActivity {
 
         songPrgs = (SeekBar)findViewById(R.id.sBar);
         songPrgs.setClickable(false);
+
         pausebtn.setEnabled(false);
 
         playbtn.setOnClickListener(new View.OnClickListener() {
@@ -48,7 +49,7 @@ public class MediaActivity extends AppCompatActivity {
                 sTime = mPlayer.getCurrentPosition();
                 if(oTime == 0){
                     songPrgs.setMax(eTime);
-                    oTime =1;
+                    oTime = 1;
                 }
                 songTime.setText(String.format("%d min, %d sec", TimeUnit.MILLISECONDS.toMinutes(eTime),
                         TimeUnit.MILLISECONDS.toSeconds(eTime) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS. toMinutes(eTime))) );

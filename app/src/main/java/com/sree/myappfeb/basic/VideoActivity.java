@@ -18,7 +18,7 @@ public class VideoActivity extends AppCompatActivity {
         VideoView videoView =(VideoView)findViewById(R.id.vdVw);
 
         MediaController mediaController= new MediaController(this);
-        mediaController.setAnchorView(videoView);
+      //  mediaController.setAnchorView(videoView);
         Uri uri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.video_demo);
         videoView.setMediaController(mediaController);
         videoView.setVideoURI(uri);

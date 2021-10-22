@@ -41,8 +41,9 @@ public class ProgressDialogActivity extends AppCompatActivity {
             public void run() {
                 try {
                     while ( progress.getProgress() <=  progress.getMax()) {
-                        Thread.sleep(200);
+                        Thread.sleep(2000);
                         handle.sendMessage(handle.obtainMessage());
+
                         if (progress.getProgress() == progress.getMax()) {
                             progress.dismiss();
                         }

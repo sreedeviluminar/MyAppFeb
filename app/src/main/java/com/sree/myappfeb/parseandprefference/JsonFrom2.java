@@ -78,6 +78,7 @@ public class JsonFrom2 extends AppCompatActivity {
 
                     // looping through All Contacts
                     for (int i = 0; i < contacts.length(); i++) {
+
                         JSONObject c = contacts.getJSONObject(i);
 
                         String id = c.getString("id");
@@ -88,6 +89,7 @@ public class JsonFrom2 extends AppCompatActivity {
 
                         // Phone node is JSON Object
                         JSONObject phone = c.getJSONObject("phone");
+
                         String mobile = phone.getString("mobile");
                         String home = phone.getString("home");
                         String office = phone.getString("office");
@@ -106,13 +108,12 @@ public class JsonFrom2 extends AppCompatActivity {
                     }
                 } catch (final JSONException e) {
                     Log.e(TAG, "Json parsing error: " + e.getMessage());
+
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
-                            Toast.makeText(getApplicationContext(),
-                                    "Json parsing error: " + e.getMessage(),
-                                    Toast.LENGTH_LONG)
-                                    .show();
+                            Toast.makeText(getApplicationContext(), "Json parsing error: " + e.getMessage(),
+                                    Toast.LENGTH_LONG).show();
                         }
                     });
 

@@ -1,7 +1,6 @@
 package com.sree.myappfeb.storage;
 
 public class CourseModal {
-
     // variables for our coursename,
     // description, tracks and duration, id.
     private String courseName;
@@ -10,6 +9,13 @@ public class CourseModal {
     private String courseDescription;
     private int id;
 
+    // constructor
+    public CourseModal(String courseName, String courseDuration, String courseTracks, String courseDescription) {
+        this.courseName = courseName;
+        this.courseDuration = courseDuration;
+        this.courseTracks = courseTracks;
+        this.courseDescription = courseDescription;
+    }
     // creating getter and setter methods
     public String getCourseName()
     {
@@ -53,11 +59,5 @@ public class CourseModal {
         this.id = id;
     }
 
-    // constructor
-    public CourseModal(String courseName, String courseDuration, String courseTracks, String courseDescription) {
-        this.courseName = courseName;
-        this.courseDuration = courseDuration;
-        this.courseTracks = courseTracks;
-        this.courseDescription = courseDescription;
-    }
+
 }

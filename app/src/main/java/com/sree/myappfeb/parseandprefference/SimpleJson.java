@@ -19,6 +19,7 @@ public class SimpleJson extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_simple_json);
+
         String json_stu = getListData();
 
         try {
@@ -29,7 +30,8 @@ public class SimpleJson extends AppCompatActivity {
             JSONObject jsObj = new JSONObject(json_stu);
 
             JSONArray jsArray = jsObj.getJSONArray("Students");
-            for (int i = 0; i < jsArray.length(); i++) {
+
+            for (int i = 0 ; i < jsArray.length(); i++) {
 
                 HashMap<String, String> stu = new HashMap<>();
 
@@ -43,11 +45,11 @@ public class SimpleJson extends AppCompatActivity {
             }
 
             ListAdapter simpleAdapter = new SimpleAdapter(SimpleJson.this,
-                    userList, R.layout.jsonlistt, new String[]
-                    {"name", "Branch", "institute"}, new int[]
-                    {R.id.StudentName, R.id.Branch, R.id.institute});
+                    userList, R.layout.jsonlistt, new String[]{"name", "Branch", "institute"},
+                    new int[]{R.id.StudentName, R.id.Branch, R.id.institute});
 
             listview.setAdapter(simpleAdapter);
+
         } catch (JSONException ex) {
             Log.e("JsonParser ", "Exception", ex);
         }
@@ -55,13 +57,37 @@ public class SimpleJson extends AppCompatActivity {
 
     private String getListData() {
         String json_stu1 = "{ \"Students\" :[" +
-                "{\"name\":\"Akshay \",\"Branch\":\"Computer Science\",\"institute\":\"IIT\"}" +
-                ",{\"name\":\"Peter \",\"Branch\":\"Civil\",\"institute\":\" RIT\"}" +
-                ",{\"name\":\"Alan \",\"Branch\":\"Information Technology\",\"institute\":\"IIT\"}" +
-                ",{\"name\":\"Aswathy\",\"Branch\":\"Mechanical\",\"institute\":\" RIT\"}" +
-                ",{\"name\":\"Eldho\",\"Branch\":\"Textile\",\"institute\":\" IIT\"}" +
-                ",{\"name\":\"John\",\"Branch\":\"Electrical\",\"institute\":\" RIT\"}" +
-                ",{\"name\":\"Arya\",\"Branch\":\"Mechanical\",\"institute\":\"NIT\"}] }";
+
+                "{\"name\":\"Akshay \"," +
+                "\"Branch\":\"Computer Science\","+
+                "\"institute\":\"IIT\"}" +
+
+                ",{\"name\":\"Peter \"," +
+                "\"Branch\":\"Civil\"," +
+                "\"institute\":\" RIT\"}" +
+
+                ",{\"name\":\"Alan \"," +
+                "\"Branch\":\"Information Technology\"," +
+                "\"institute\":\"IIT\"}" +
+
+                ",{\"name\":\"Aswathy\"," +
+                "\"Branch\":\"Mechanical\"," +
+                "\"institute\":\" RIT\"}" +
+
+                ",{\"name\":\"Eldho\"," +
+                "\"Branch\":\"Textile\"," +
+                "\"institute\":\" IIT\"}" +
+
+                ",{\"name\":\"John\"," +
+                "\"Branch\":\"Electrical\"," +
+                "\"institute\":\" RIT\"}" +
+
+
+                ",{\"name\":\"Arya\"," +
+                "\"Branch\":\"Mechanical\"," +
+                "\"institute\":\"NIT\"}" +
+
+                "] }";
         return json_stu1;
     }
 }

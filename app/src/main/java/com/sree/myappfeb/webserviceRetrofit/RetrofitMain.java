@@ -43,6 +43,7 @@ public class RetrofitMain extends AppCompatActivity {
         activity = this;
         btnSubmit = (Button) findViewById(R.id.btnSubmit);
         listView = (ListView) findViewById(android.R.id.list);
+
         btnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -76,9 +77,7 @@ public class RetrofitMain extends AppCompatActivity {
             public void onResponse(Call<List<Country>> call, Response<List<Country>> response) {
 
                 try {
-
                     countries= (ArrayList)response.body();
-
                     if (progressDialog.isShowing())
                         progressDialog.dismiss();
                     // For populating list data

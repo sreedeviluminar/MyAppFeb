@@ -30,7 +30,7 @@ public class NumberPickerActivity extends Activity {
         np.setMaxValue(100);
 
         //Gets whether the selector wheel wraps when reaching the min/max value.
-        np.setWrapSelectorWheel(true);
+        np.setWrapSelectorWheel(false);
 
         //Set a value change listener for NumberPicker
         np.setOnValueChangedListener(new NumberPicker.OnValueChangeListener() {

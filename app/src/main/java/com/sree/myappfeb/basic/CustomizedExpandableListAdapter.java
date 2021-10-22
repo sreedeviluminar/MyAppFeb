@@ -3,7 +3,6 @@ package com.sree.myappfeb.basic;
 
 import java.util.HashMap;
 import java.util.List;
-
 import android.content.Context;
 import android.graphics.Typeface;
 import android.view.LayoutInflater;
@@ -11,7 +10,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.TextView;
-
 import com.sree.myappfeb.R;
 
 import java.util.HashMap;
@@ -46,9 +44,10 @@ public class CustomizedExpandableListAdapter extends BaseExpandableListAdapter {
 
     @Override
     // Gets a View that displays the data for the given child within the given group.
-    public View getChildView(int lstPosn, final int expanded_ListPosition,
-                             boolean isLastChild, View convertView, ViewGroup parent) {
+    public View getChildView(int lstPosn, final int expanded_ListPosition, boolean isLastChild, View convertView, ViewGroup parent) {
+
         final String expandedListText = (String) getChild(lstPosn, expanded_ListPosition);
+
         if (convertView == null) {
             LayoutInflater layoutInflater = (LayoutInflater) this.context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             convertView = layoutInflater.inflate(R.layout.list_item, null);
@@ -88,6 +87,7 @@ public class CustomizedExpandableListAdapter extends BaseExpandableListAdapter {
     // will be fetched using getChildView()
     public View getGroupView(int listPosition, boolean isExpanded, View convertView, ViewGroup parent) {
         String listTitle = (String) getGroup(listPosition);
+
         if (convertView == null) {
             LayoutInflater layoutInflater = (LayoutInflater) this.context.
                     getSystemService(Context.LAYOUT_INFLATER_SERVICE);

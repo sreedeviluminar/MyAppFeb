@@ -31,9 +31,9 @@ public class SqliteWithoutOpenHelper extends AppCompatActivity {
 
         List<String> item = new ArrayList<String>();
         ArrayAdapter<String> adapter;
-        String s;
+       // String s;
         Cursor cur;
-        Boolean m = true;
+      //  Boolean m = true;
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {
@@ -51,8 +51,8 @@ public class SqliteWithoutOpenHelper extends AppCompatActivity {
             reset = (Button) findViewById(R.id.button5);
 
             db = openOrCreateDatabase(DB_NAME, Context.MODE_PRIVATE, null);
-            db.execSQL("CREATE TABLE IF NOT EXISTS "
-                    + TABLE_NAME
+
+            db.execSQL("CREATE TABLE IF NOT EXISTS " + TABLE_NAME
                     + " (ID INTEGER PRIMARY KEY AUTOINCREMENT, NAME TEXT, " +
                     "DESIGNATION TEXT, CONTACT NUMBER, AREA TEXT, CITY TEXT);");
 
@@ -66,6 +66,7 @@ public class SqliteWithoutOpenHelper extends AppCompatActivity {
                     db = openOrCreateDatabase(DB_NAME, Context.MODE_PRIVATE, null);
                     cur = db.rawQuery("SELECT NAME FROM " + TABLE_NAME, null);
                     cur.moveToFirst();
+
                     while (cur.isAfterLast() == false) {
                         String logic = cur.getString(0);
                         item.add(logic);
@@ -117,8 +118,7 @@ public class SqliteWithoutOpenHelper extends AppCompatActivity {
                 public void onClick(View v) {
                     // TODO Auto-generated method stub
                     db = openOrCreateDatabase(DB_NAME, Context.MODE_PRIVATE, null);
-                    db.execSQL("UPDATE " + TABLE_NAME +
-                                    " SET DESIGNATION='" + des.getText().toString()
+                    db.execSQL("UPDATE " + TABLE_NAME + " SET DESIGNATION='" + des.getText().toString()
                             + "'WHERE NAME='" + name.getText().toString() + "'");
                             db.close();
                     name.getText().clear();

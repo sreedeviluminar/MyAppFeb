@@ -15,8 +15,6 @@ import com.sree.myappfeb.R;
 import java.util.ArrayList;
 
 public class SearchViewEx extends AppCompatActivity {
-
-
         SearchView searchView;
         ListView listView;
         ArrayList<String> list;

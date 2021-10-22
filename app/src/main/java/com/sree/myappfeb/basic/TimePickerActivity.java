@@ -20,6 +20,7 @@ public class TimePickerActivity extends AppCompatActivity {
         setContentView(R.layout.activity_time_picker);
         tvw=(TextView)findViewById(R.id.textView1);
         picker=(TimePicker)findViewById(R.id.timePicker1);
+
         picker.setIs24HourView(true);
         btnGet=(Button)findViewById(R.id.button1);
         btnGet.setOnClickListener(new View.OnClickListener() {
@@ -27,9 +28,10 @@ public class TimePickerActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int hour, minute;
                 String am_pm;
+
                 if (Build.VERSION.SDK_INT >= 23 ){
-                    hour = picker.getHour();
-                    minute = picker.getMinute();
+                      hour = picker.getHour();
+                      minute = picker.getMinute();
                 }
                 else{
                     hour = picker.getCurrentHour();

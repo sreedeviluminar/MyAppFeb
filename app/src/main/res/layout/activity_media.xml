@@ -63,13 +63,18 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/sBar"
         android:text="0 min, 0 sec" />
+
     <SeekBar
         android:id="@+id/sBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/btnBackward"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="-5dp"
+        android:layout_marginBottom="0dp"
         android:layout_toLeftOf="@+id/txtSongTime"
         android:layout_toRightOf="@+id/txtStartTime" />
+
     <TextView
         android:id="@+id/txtSongTime"
         android:layout_width="wrap_content"

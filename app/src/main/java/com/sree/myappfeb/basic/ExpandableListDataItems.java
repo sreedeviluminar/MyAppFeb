@@ -33,7 +33,7 @@ public class ExpandableListDataItems {
         nuts.add("Walnut");
 
         // Fruits are grouped under Fruits Items. Similarly the rest two are under
-        // Vegetable Items and Nuts Items respecitively.
+        // Vegetable Items and Nuts Items respecitively.r3
         // i.e. expandableDetailList object is used to map the group header strings to
         // their respective children using an ArrayList of Strings.
         expandableDetailList.put("Fruits Items", fruits);

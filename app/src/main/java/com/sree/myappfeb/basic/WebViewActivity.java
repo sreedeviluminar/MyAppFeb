@@ -22,11 +22,12 @@ Button b;
         editText = (EditText)findViewById(R.id.link);
         b = (Button)findViewById(R.id.webbutton);
 
-        webView.setWebViewClient(new MyBrowser());
+        webView.setWebViewClient(new WebViewClient());
 
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 String url = editText.getText().toString();
 
                 webView.getSettings().setLoadsImagesAutomatically(true);
@@ -38,11 +39,4 @@ Button b;
 
     }
 
-    private class MyBrowser extends WebViewClient {
-        @Override
-        public boolean shouldOverrideUrlLoading(WebView view, String url) {
-           view.loadUrl(url);
-           return true;
-        }
-    }
 }

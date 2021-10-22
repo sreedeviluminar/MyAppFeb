@@ -27,7 +27,6 @@ public class JsonArrayParsingVolley extends AppCompatActivity {
     // creating variables for
     // our ui components.
     private RecyclerView courseRV;
-
     // variable for our adapter
     // class and array list
     private CourseAdapter adapter;

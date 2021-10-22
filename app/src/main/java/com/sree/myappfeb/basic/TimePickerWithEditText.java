@@ -25,6 +25,7 @@ public class TimePickerWithEditText extends AppCompatActivity {
         setContentView(R.layout.activity_time_picker_with_edit_text);
         tvw=(TextView)findViewById(R.id.textView1);
         eText=(EditText) findViewById(R.id.editText1);
+
         eText.setInputType(InputType.TYPE_NULL);
         eText.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,6 +33,7 @@ public class TimePickerWithEditText extends AppCompatActivity {
                 final Calendar cldr = Calendar.getInstance();
                 int hour = cldr.get(Calendar.HOUR_OF_DAY);
                 int minutes = cldr.get(Calendar.MINUTE);
+
                 // time picker dialog
                 picker = new TimePickerDialog(TimePickerWithEditText.this,
                         new TimePickerDialog.OnTimeSetListener() {

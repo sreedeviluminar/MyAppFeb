@@ -28,23 +28,23 @@ public class ImageAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
 
         ImageView imageView = new ImageView(mContext);
-
         imageView.setLayoutParams(new GridView.LayoutParams(200, 200));
         imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
         imageView.setPadding(8, 8, 8, 8);
         imageView.setImageResource(thumbImages[position]);
+
         return imageView;
     }
     // Add all our images to arraylist
     public Integer[] thumbImages = {
-            R.drawable.iconfeb, R.drawable.iconfeb,
-            R.drawable.iconfeb, R.drawable.iconfeb,
-            R.drawable.iconfeb, R.drawable.iconfeb,
-            R.drawable.iconfeb, R.drawable.iconfeb,
-            R.drawable.iconfeb, R.drawable.iconfeb,
-            R.drawable.iconfeb, R.drawable.iconfeb,
-            R.drawable.iconfeb, R.drawable.iconfeb,
-            R.drawable.iconfeb, R.drawable.iconfeb,
+            R.drawable.girl, R.drawable.ic_account_box,
+            R.drawable.ic_message, R.drawable.settings,
+            R.drawable.bluetoothoff, R.drawable.house,
+            R.drawable.ic_social, R.drawable.ic_content_cut,
+            R.drawable.iconfeb, R.drawable.email,
+            R.drawable.bluetoothoff, R.drawable.house,
+            R.drawable.ic_social, R.drawable.ic_content_cut,
+            R.drawable.iconfeb, R.drawable.email,
 
     };
 }

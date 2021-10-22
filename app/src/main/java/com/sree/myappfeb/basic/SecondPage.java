@@ -14,14 +14,17 @@ import android.widget.Toast;
 import com.sree.myappfeb.R;
 
 public class SecondPage extends AppCompatActivity {
+
    EditText un,pw;
-   int count=3;
+   int count = 3;
    TextView al,lb;
-    Button login;
+   Button login;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second_page);
+
         un=(EditText)findViewById(R.id.editText1);
         pw=(EditText)findViewById(R.id.editText2);
         al=(TextView)findViewById(R.id.no_ofatteleft);
@@ -30,11 +33,15 @@ public class SecondPage extends AppCompatActivity {
 
     }
     public void login(View view) {
-        if(un.getText().toString().equals("user")&& pw.getText().toString().equals("admin")){
+        if(un.getText().toString().equals("user") && pw.getText().toString().equals("admin")){
+
             Intent i = new Intent(getApplicationContext(), ThirdActivity.class);
             startActivity(i);
+
         }else {
+
             Toast.makeText(getApplicationContext(),"Username/PassWord is incorrect",Toast.LENGTH_LONG).show();
+
             al.setVisibility(view.VISIBLE);
             al.setTextColor(Color.RED);
             count--;

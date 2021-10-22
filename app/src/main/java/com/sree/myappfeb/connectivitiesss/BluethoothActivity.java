@@ -116,8 +116,6 @@ public class BluethoothActivity extends AppCompatActivity {
                 }
             }
         });
-
-
     }
 
     @Override

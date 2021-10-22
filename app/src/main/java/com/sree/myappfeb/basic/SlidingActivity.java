@@ -11,6 +11,8 @@ import com.sree.myappfeb.R;
 
 public class SlidingActivity extends AppCompatActivity {
         String[] nameArray = {"India", "USA", "Australia", "UK", "Italy", "Ireland", "Africa",
+                "India", "USA", "Australia", "UK", "Italy", "Ireland", "Africa","India", "USA",
+                "Australia", "UK", "Italy", "Ireland", "Africa",
                 "India", "USA", "Australia", "UK", "Italy", "Ireland", "Africa"};
 
         @Override

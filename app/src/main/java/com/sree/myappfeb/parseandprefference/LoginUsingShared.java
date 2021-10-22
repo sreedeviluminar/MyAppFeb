@@ -36,7 +36,9 @@ public class LoginUsingShared extends AppCompatActivity {
             public void onClick(View v) {
                 String username = uname.getText().toString();
                 String password = pwd.getText().toString();
+
                 if(username.equals("sreedevi") && password.equals("1234")){
+
                     SharedPreferences.Editor editor = pref.edit();
                     editor.putString("username",username);
                     editor.putString("password",password);

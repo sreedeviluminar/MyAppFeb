@@ -82,6 +82,8 @@
 
     <!--googleads-->
     <string name="banner_ad_unit_id">ca-app-pub-2015578392698427/9395349888</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

@@ -24,6 +24,7 @@ public class ProgressBarActivity extends AppCompatActivity {
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 setProgressValue(progress);
                     }
                 });

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.SeekBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.sree.myappfeb.R;
@@ -15,6 +16,7 @@ public class SeekBarActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_seek_bar);
 
+        TextView tv = (TextView)findViewById(R.id.textView3);
         SeekBar seekBar = (SeekBar)findViewById(R.id.seekBar);
 
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
@@ -22,13 +24,14 @@ public class SeekBarActivity extends AppCompatActivity {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 this.progress=progress;
-
                // Toast.makeText(getApplicationContext(),"progress "+progress,Toast.LENGTH_LONG).show();
+              tv.setTextSize(progress);
 
             }
 
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
+
                 Toast.makeText(getApplicationContext(),"started touching",Toast.LENGTH_LONG).show();
             }
 

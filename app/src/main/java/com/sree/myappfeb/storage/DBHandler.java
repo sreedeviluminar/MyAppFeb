@@ -81,7 +81,6 @@ public class DBHandler extends SQLiteOpenHelper {
         // after adding all values we are passing
         // content values to our table.
         db.insert(TABLE_NAME, null, values);
-
         // at last we are closing our
         // database after adding database.
         db.close();
@@ -103,7 +102,7 @@ public class DBHandler extends SQLiteOpenHelper {
         if (cursorCourses.moveToFirst()) {
             do {
                 // on below line we are adding the data from cursor to our array list.
-                courseModalArrayList.add(new CourseModal(
+                  courseModalArrayList.add(new CourseModal(
                         cursorCourses.getString(1),
                         cursorCourses.getString(4),
                         cursorCourses.getString(2),

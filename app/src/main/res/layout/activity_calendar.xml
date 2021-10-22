@@ -1,50 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".basic.CalendarActivity">
+    android:layout_height="match_parent">
 
+    <!-- Add TextView to display the date -->
+    <TextView
+        android:id="@+id/date_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"
+        android:text="Set the Date"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="bold" />
+
+    <!-- Add CalendarView to display the Calendar -->
     <CalendarView
-        android:id="@+id/calendarView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnWithAnim"
+        android:id="@+id/calendar"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="19dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="With\nAnim"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnWithoutAnim"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnRange" />
+        android:layout_height="wrap_content">
+    </CalendarView>
 
-    <Button
-        android:id="@+id/btnWithoutAnim"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Without\nAnim"
-        app:layout_constraintBaseline_toBaselineOf="@+id/btnWithAnim"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnWithAnim" />
-
-    <Button
-        android:id="@+id/btnRange"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Custom\nRange"
-        app:layout_constraintEnd_toStartOf="@+id/btnWithAnim"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintHorizontal_chainStyle="spread"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btnWithAnim" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
