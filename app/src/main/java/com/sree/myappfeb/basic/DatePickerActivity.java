@@ -25,6 +25,7 @@ public class DatePickerActivity extends AppCompatActivity {
         tvw=(TextView)findViewById(R.id.textView1);
         eText=(EditText) findViewById(R.id.editText1);
         eText.setInputType(InputType.TYPE_NULL);
+
         eText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

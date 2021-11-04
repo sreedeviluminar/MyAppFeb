@@ -111,8 +111,7 @@ public class MediaActivity extends AppCompatActivity {
             sTime = mPlayer.getCurrentPosition();
             startTime.setText(String.format("%d min, %d sec",
                     TimeUnit.MILLISECONDS.toMinutes(sTime),
-                    TimeUnit.MILLISECONDS.toSeconds(sTime) -
-                            TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(sTime))));
+                    TimeUnit.MILLISECONDS.toSeconds(sTime) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(sTime))));
             songPrgs.setProgress(sTime);
             hdlr.postDelayed(this, 100);
         }

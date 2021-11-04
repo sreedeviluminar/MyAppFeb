@@ -34,18 +34,17 @@ public class PhoneCallEx extends AppCompatActivity {
         });
     }
     @Override
-    public void onRequestPermissionsResult(int requestCode, String[] permissions,
-                                           int[] grantResults) {
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         if (requestCode == 101) {
             if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+
                 callPhoneNumber();
             }
         }
     }
 
-    public void callPhoneNumber()
-    {
+    public void callPhoneNumber() {
         try
         {
             if(Build.VERSION.SDK_INT > 22) {
@@ -59,7 +58,7 @@ public class PhoneCallEx extends AppCompatActivity {
 
             }
             else {
-                Intent callIntent = new Intent(Intent.ACTION_DIAL);
+                Intent callIntent = new Intent(Intent.ACTION_CALL);
                 callIntent.setData(Uri.parse("tel:" + txtPhone.getText().toString()));
                 startActivity(callIntent);
             }

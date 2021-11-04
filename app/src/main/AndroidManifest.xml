@@ -15,8 +15,8 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-    <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
@@ -31,7 +31,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyAppFeb">
-        <activity android:name=".storage.ExDetailsActivity"></activity>
+        <activity
+            android:name=".basic.SnackBarr"
+            android:exported="false" />
+        <activity
+            android:name=".basic.ExplicitIntent"
+            android:exported="false" />
+        <activity
+            android:name=".basic.ImplicitIntent"
+            android:exported="false" />
+        <activity
+            android:name=".basic.GridwithImageandText"
+            android:exported="false" />
+        <activity android:name=".storage.ExDetailsActivity" />
         <activity android:name=".basic.NormalSpinner" />
         <activity android:name=".basic.SearchViewEx" />
         <activity android:name=".basic.CustomListView" />

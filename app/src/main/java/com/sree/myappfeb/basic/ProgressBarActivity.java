@@ -32,6 +32,7 @@ public class ProgressBarActivity extends AppCompatActivity {
             }
 
     private void setProgressValue(int progress) {
+
         progressBar.setProgress(progress);
 
         Thread thread = new Thread(new Runnable() {

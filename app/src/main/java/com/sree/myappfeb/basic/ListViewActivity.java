@@ -13,20 +13,15 @@ import com.sree.myappfeb.R;
 public class ListViewActivity extends AppCompatActivity {
 
     ListView l;
-    String tutorials[]
-            = { "Algorithms", "Data Structures",
-                "Languages", "Interview Corner",
-                "GATE", "ISRO CS",
-                "UGC NET CS", "CS Subjects",
-                "Web Technologies" };
+    String tutorials[] = { "Algorithms", "Data Structures","Languages", "Interview Corner",
+                "GATE", "ISRO CS", "UGC NET CS", "CS Subjects", "Web Technologies" };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_view);
          l = findViewById(R.id.list);
-        ArrayAdapter arr= new ArrayAdapter(this,
-                android.R.layout.simple_list_item_1, tutorials);
+        ArrayAdapter arr= new ArrayAdapter(this, android.R.layout.simple_list_item_1, tutorials);
         l.setAdapter(arr);
 
         l.setOnItemClickListener(new AdapterView.OnItemClickListener() {

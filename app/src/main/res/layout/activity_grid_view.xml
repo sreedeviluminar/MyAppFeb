@@ -2,22 +2,23 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
         android:text="This is My GridView"
-        android:textSize="30dp"
-        android:layout_marginLeft="60dp"/>
+        android:textSize="30dp" />
 
     <GridView
         android:id="@+id/gridview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:columnWidth="110dp"
-        android:numColumns="auto_fit"
         android:layout_marginTop="50dp"
-        android:verticalSpacing="10dp"
+        android:columnWidth="110dp"
+        android:gravity="center"
         android:horizontalSpacing="10dp"
+        android:numColumns="3"
         android:stretchMode="columnWidth"
-        android:gravity="center"/>
+        android:verticalSpacing="10dp" />
 </RelativeLayout>

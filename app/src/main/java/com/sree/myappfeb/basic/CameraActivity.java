@@ -12,9 +12,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.sree.myappfeb.R;
 
 public class CameraActivity extends AppCompatActivity {
+
     private Button btnCapture;
     private ImageView imgCapture;
     private static final int Image_Capture_Code = 1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -23,9 +23,13 @@ import com.sree.myappfeb.basic.CustomListView;
 import com.sree.myappfeb.basic.CustomToastActivity;
 import com.sree.myappfeb.basic.DatePickerActivity;
 import com.sree.myappfeb.basic.ExpandableLVActivity;
+import com.sree.myappfeb.basic.ExplicitIntent;
 import com.sree.myappfeb.basic.GalleryActivity;
 import com.sree.myappfeb.basic.GridViewActivity;
+import com.sree.myappfeb.basic.GridwithImageandText;
 import com.sree.myappfeb.basic.HorizontalScroll;
+import com.sree.myappfeb.basic.ImplicitIntent;
+import com.sree.myappfeb.basic.ListViewWithCheckBoxActivity;
 import com.sree.myappfeb.basic.MapsActivity;
 import com.sree.myappfeb.basic.MediaActivity;
 import com.sree.myappfeb.basic.NumberPickerActivity;
@@ -36,7 +40,9 @@ import com.sree.myappfeb.basic.ProgressDialogActivity;
 import com.sree.myappfeb.basic.RadioButtonActivity;
 import com.sree.myappfeb.basic.RatingActivity;
 import com.sree.myappfeb.basic.SearchViewEx;
+import com.sree.myappfeb.basic.SecondPage;
 import com.sree.myappfeb.basic.SeekBarActivity;
+import com.sree.myappfeb.basic.SnackBarr;
 import com.sree.myappfeb.basic.SpinnerActivity;
 import com.sree.myappfeb.basic.SubMenuEx;
 import com.sree.myappfeb.basic.TabbbActivity;
@@ -99,7 +105,7 @@ public class HomePage extends AppCompatActivity {
      handler.postDelayed(new Runnable() {
          @Override
          public void run() {
-                 Intent i = new Intent(getApplicationContext(), AsyncActivity.class);
+                 Intent i = new Intent(getApplicationContext(), SnackBarr.class);
                  startActivity(i);
          }
      },1000);

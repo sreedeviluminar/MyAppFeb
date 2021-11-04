@@ -8,7 +8,7 @@
 
     <WebView
         android:id="@+id/webView"
-        android:layout_width="411dp"
+        android:layout_width="match_parent"
         android:layout_height="526dp"
         android:layout_marginStart="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,6 +24,7 @@
         android:ems="10"
         android:hint="enter the link"
         android:inputType="textPersonName"
+        android:minHeight="48dp"
         app:layout_constraintBottom_toTopOf="@+id/webView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.178"

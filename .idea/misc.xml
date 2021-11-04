@@ -3,11 +3,54 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/drawable/custommmm.xml" value="0.1484375" />
         <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/layout/activity_async.xml" value="0.2" />
+        <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/layout/activity_auto_complete_tv.xml" value="0.133203125" />
+        <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/layout/activity_calendar.xml" value="0.16" />
+        <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/layout/activity_camera.xml" value="0.133203125" />
+        <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/layout/activity_check_box.xml" value="0.133203125" />
         <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/layout/activity_check_box2.xml" value="0.2" />
+        <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/layout/activity_context_menu_ex.xml" value="0.133203125" />
+        <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/layout/activity_custom_toast.xml" value="0.16" />
+        <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/layout/activity_date_picker.xml" value="0.16" />
+        <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/layout/activity_explicit_intent.xml" value="0.15" />
+        <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/layout/activity_gallery.xml" value="0.102734375" />
+        <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/layout/activity_grid_view.xml" value="0.1" />
+        <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/layout/activity_gridwith_imageand_text.xml" value="0.133203125" />
+        <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/layout/activity_horizontal_scoll.xml" value="0.133203125" />
+        <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/layout/activity_implicit_intent.xml" value="0.121484375" />
+        <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/layout/activity_list_view.xml" value="0.18" />
+        <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/layout/activity_list_view_with_check_box.xml" value="0.133203125" />
         <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/layout/activity_m_v_c_pattern.xml" value="0.133203125" />
         <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/layout/activity_m_v_p_pattern.xml" value="0.133203125" />
         <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/layout/activity_m_v_v_m_pattern.xml" value="0.133203125" />
+        <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/layout/activity_main.xml" value="0.133203125" />
+        <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/layout/activity_maps.xml" value="0.1" />
+        <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/layout/activity_media.xml" value="0.25" />
+        <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/layout/activity_my.xml" value="0.133203125" />
+        <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/layout/activity_number_picker.xml" value="0.2" />
+        <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/layout/activity_option_menu_ex.xml" value="0.133203125" />
+        <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/layout/activity_phone_call_ex.xml" value="0.2" />
+        <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/layout/activity_pop_upmenu.xml" value="0.133203125" />
+        <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/layout/activity_progress_bar.xml" value="0.18" />
+        <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/layout/activity_rating.xml" value="0.16" />
+        <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/layout/activity_s_m_s.xml" value="0.2" />
+        <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/layout/activity_search_view_ex.xml" value="0.133203125" />
+        <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/layout/activity_second_page.xml" value="0.133203125" />
+        <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/layout/activity_seek_bar.xml" value="0.16" />
+        <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/layout/activity_snack_barr.xml" value="0.133203125" />
+        <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/layout/activity_third.xml" value="0.1" />
+        <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/layout/activity_time_picker_with_edit_text.xml" value="0.10972222222222222" />
+        <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/layout/activity_vertical_scrol.xml" value="0.12" />
+        <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/layout/activity_video.xml" value="0.1" />
+        <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/layout/activity_web_view.xml" value="0.133203125" />
+        <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/layout/custom_toast.xml" value="0.133203125" />
+        <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/layout/item_row.xml" value="0.133203125" />
+        <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/layout/list_item_grid.xml" value="0.133203125" />
+        <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/menu/mymenu.xml" value="0.17" />
+        <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/menu/option.xml" value="0.2" />
+        <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/menu/popup.xml" value="0.133203125" />
+        <entry key="..\:/Android/Android Programs/MyAppFeb/app/src/main/res/menu/subbmenu.xml" value="0.2" />
       </map>
     </option>
   </component>

@@ -12,9 +12,10 @@
         android:textStyle="bold"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true" />
+
     <ImageView
+        android:id="@+id/capturedImage"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:id="@+id/capturedImage"
-        android:layout_above="@+id/btnTakePicture"/>
+        android:layout_above="@+id/btnTakePicture" />
 </RelativeLayout>

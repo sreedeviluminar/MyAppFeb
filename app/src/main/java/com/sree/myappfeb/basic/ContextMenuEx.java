@@ -26,6 +26,7 @@ public class ContextMenuEx extends AppCompatActivity {
         menu.add(0, v.getId(), 0, "Search");
         menu.add(0, v.getId(), 0, "Share");
         menu.add(0, v.getId(), 0, "Bookmark");
+        menu.add("copy");
     }
     @Override
     public boolean onContextItemSelected(MenuItem item) {

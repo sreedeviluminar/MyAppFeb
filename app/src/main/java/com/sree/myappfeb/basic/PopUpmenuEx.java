@@ -17,6 +17,7 @@ public class PopUpmenuEx extends AppCompatActivity implements PopupMenu.OnMenuIt
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pop_upmenu);
         Button btn = (Button) findViewById(R.id.btnShow);
+
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

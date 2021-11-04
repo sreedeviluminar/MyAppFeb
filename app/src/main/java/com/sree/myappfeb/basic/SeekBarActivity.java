@@ -28,7 +28,6 @@ public class SeekBarActivity extends AppCompatActivity {
               tv.setTextSize(progress);
 
             }
-
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
 
